@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Post, ReactionType, User, Reaction, Comment } from '../types';
+import { Post, ReactionType, User, Reaction, Comment, HumorCategory } from '../types';
 import { calculateHumorScore, REACTION_POINTS } from '../constants';
 import Icon, { IconName } from './Icon';
 import Tooltip from './Tooltip';
@@ -410,7 +410,7 @@ const PostCard: React.FC<PostCardProps> = ({ post, currentUser, onProfileClick, 
               <div className="flex flex-wrap gap-2">
                 <select
                   value={editCategory}
-                  onChange={(e) => setEditCategory(e.target.value)}
+                  onChange={(e) => setEditCategory(e.target.value as HumorCategory)}
                   className="px-3 py-1 border-2 border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 text-sm"
                 >
                   <option value="Tech & Geek Humor">Tech & Geek Humor</option>

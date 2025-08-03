@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/humor.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humor - Where comedy grows, not clout.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Lora', 'serif'],
+            },
+            colors: {
+              'brand': {
+                '50': '#fefce8',
+                '100': '#fef9c3',
+                '200': '#fef08a',
+                '300': '#fde047',
+                '400': '#facc15',
+                '500': '#eab308', // Main accent color
+                '600': '#ca8a04',
+                '700': '#a16207',
+                '800': '#854d0e',
+                '900': '#713f12',
+                '950': '#422006',
+              },
+            },
+            boxShadow: {
+              'sharp': '4px 4px 0px #111827', // dark gray for light mode
+              'sharp-dark': '4px 4px 0px #e5e7eb', // light gray for dark mode
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Keep selection styles as they can't be handled by Tailwind utilities */
+      ::selection { background-color: #eab308; color: #111827; }
+      ::-moz-selection { background-color: #eab308; color: #111827; }
+      
+      .dark ::selection { background-color: #eab308; color: #111827; }
+      .dark ::-moz-selection { background-color: #eab308; color: #111827; }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.12.0",
+    "express": "https://esm.sh/express@^5.1.0",
+    "dotenv": "https://esm.sh/dotenv@^17.2.1",
+    "cors": "https://esm.sh/cors@^2.8.5",
+    "mongoose": "https://esm.sh/mongoose@^8.17.0",
+    "bcryptjs": "https://esm.sh/bcryptjs@^3.0.2",
+    "jsonwebtoken": "https://esm.sh/jsonwebtoken@^9.0.2",
+    "@faker-js/faker": "https://esm.sh/@faker-js/faker@^9.9.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DyyE4Jy3.js"></script>
+</head>
+  <body class="font-sans bg-[#F8F7F4] text-gray-800 dark:bg-gray-900 dark:text-gray-200 antialiased transition-colors duration-300">
+    <div id="root"></div>
+</body>
+</html>
